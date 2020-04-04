@@ -27,8 +27,6 @@ export class AppComponent implements OnInit {
   searchUsers(criteria: Criteria, update: Partial<Criteria>): void {
     const updatedCriteria = { ...criteria, ...update };
 
-    console.log(updatedCriteria);
-
     this.appService.loadUsers(updatedCriteria);
   }
 }
