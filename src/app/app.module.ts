@@ -7,7 +7,6 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
-import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 
 import { AppComponent } from "./app.component";
@@ -24,7 +23,6 @@ import { httpMocksProvider } from "./http-mocks-provider";
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    MatProgressSpinnerModule,
     MatProgressBarModule
   ],
   declarations: [AppComponent],

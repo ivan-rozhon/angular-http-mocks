@@ -1,5 +1,7 @@
 <ng-container *ngIf="appService.data$ | async as data; else loading">
 	<div class="mat-elevation-z8">
+    <mat-progress-bar *ngIf="appService.loading$ | async" mode="indeterminate"></mat-progress-bar>
+
 		<table mat-table matSort matSortDisableClear [matSortActive]="data.criteria.sort.active"
 			[matSortDirection]="data.criteria.sort.direction" [dataSource]="data.users"
 			(matSortChange)="searchUsers(data.criteria, { sort: $event })">
