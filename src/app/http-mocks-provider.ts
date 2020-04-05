@@ -22,8 +22,7 @@ export const httpMocksProvider: Provider = {
 function httpMocksProviderFactory(httpMocksService: HttpMocksService) {
   return () =>
     httpMocksService.setHttpMocks(mocks, {
-      loggingEnabled: true,
-      useLocationHash: true
+      loggingEnabled: true
     });
 }
 
